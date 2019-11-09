@@ -4,6 +4,12 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Person {
+    private static Long count = 1L;
+    private final Long ID;
+
+    public Long getID() {
+        return ID;
+    }
 
     private String name;
 
@@ -17,6 +23,7 @@ public class Person {
         this.name = name;
         this.age = age;
         this.address = address;
+        this.ID = count++;
         relatives = new ArrayList<>();
     }
 

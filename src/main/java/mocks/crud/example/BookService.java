@@ -9,7 +9,6 @@ public class BookService {
     }
 
     public Book findById(Long id) {
-
         return repository.findById(id);
     }
 
